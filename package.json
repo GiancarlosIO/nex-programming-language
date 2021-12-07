@@ -1,0 +1,13 @@
+{
+  "name": "nex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node nex.mjs"
+  },
+  "keywords": [],
+  "author": "Giancarlos Isasi",
+  "license": "ISC"
+}
