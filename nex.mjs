@@ -3,6 +3,7 @@
  */
 import assert from 'assert';
 import Environment from './environment.mjs';
+import * as testUtil from './test-util.mjs';
 
 class Nex {
   /**
@@ -158,5 +159,13 @@ assert.strictEqual(nex.eval(
     'data',
   ],
 ), 100);
+
+testUtil.test(nex, `
+  (begin
+    (var x 10)
+    (var y 20)
+    (+ (* x 10) y)
+  )
+`, 120);
 
 console.log('All assertions passed!');
